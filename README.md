@@ -120,11 +120,29 @@ Thông tin login như sau:
 ![Alt text](http://i.imgur.com/dF7FJgc.jpg)
 
 
-
-
-
 <b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
+
+Chú ý: Bạn copy file config.cfg sang máy chủ Network và chuyển đến thư mục network trong scrit cài đặt
+
+Chạy lệnh: bash network-1-ipadd.sh
+
+![Alt text](http://i.imgur.com/mBEdiGh.jpg)
+
+Chạy lệnh: bash network-2-prepare.sh
+
+![Alt text](http://i.imgur.com/OQEIJwy.jpg)
 
 <b>Bước 2: Thực hiện chạy các script trên máy chủ Compute</b>
 
+Chú ý: Bạn cần copy file config.cfg sang máy chủ này.
+
+Chạy lênh: bash compute1-1-ipdd.sh
+
+![Alt text](http://i.imgur.com/6j5hqIb.jpg)
+
+Chạy lệnh: bash compute1-2-prepare
+
+![Alt text](http://i.imgur.com/dx9NdX6.jpg)
+
+Chúc mừng bạn đã cài đặt thành công!
 Script install OpenStack KiLo custom by Python Viet Nam. 
