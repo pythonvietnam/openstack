@@ -103,6 +103,23 @@ Thực hiện confirm
 
 ![Alt text](http://i.imgur.com/YxgDKAK.jpg)
 
+Chạy lênh: bash controller-8-neutron.sh
+
+![Alt text](http://i.imgur.com/xPemi6T.jpg)
+
+Chạy lệnh: bash controller-9-cinder.sh
+
+![Alt text](http://i.imgur.com/sJZyDXw.jpg)
+
+Chạy lệnh: bash controller-horizon.sh
+
+![Alt text](http://i.imgur.com/75sWDsN.jpg)
+
+Thông tin login như sau:
+
+![Alt text](http://i.imgur.com/dF7FJgc.jpg)
+
+
 
 
 
