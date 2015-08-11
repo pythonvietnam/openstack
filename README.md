@@ -2,6 +2,7 @@
 ### A. Mô hình cài đặt
 ### B. Các bước cài đặt
 <b>Bước 1: Bạn thực hiện lấy toàn bộ script về máy chủ</b>
+
 Chú ý: Thao tác này bạn có thể làm trên tất cả các máy hoặc có thể làm trên một máy rồi copy sang các máy chủ khác.
 
 ```sh
