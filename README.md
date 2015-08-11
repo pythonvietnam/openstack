@@ -83,9 +83,28 @@ Chạy lệnh bash controller-3-create-db.sh
 
 ![Alt text](http://i.imgur.com/4u1f19u.jpg)
 
-Chạy lệnh  bash controller-4.keystone.sh
+Chạy lệnh:  bash controller-4.keystone.sh
+
+![Alt text](http://i.imgur.com/fCOzw2r.jpg)
+
+Chạy lệnh: bash controller-5-creatusetenant.sh
 
 ![Alt text](http://i.imgur.com/OhnBv5l.jpg)
+
+Chạy lệnh: bash controller-6-glance.sh
+
+![Alt text](http://i.imgur.com/HKc5iHv.jpg)
+
+Chạy lệnh: bash controller-7-nova.sh
+
+![Alt text](http://i.imgur.com/sWKVdnd.jpg)
+
+Thực hiện confirm
+
+![Alt text](http://i.imgur.com/YxgDKAK.jpg)
+
+
+
 
 <b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
 
