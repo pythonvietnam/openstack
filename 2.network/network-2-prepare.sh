@@ -1,6 +1,7 @@
 #!/bin/bash -ex
 #
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
+sleep 5
 source config.cfg
 
 # Config for file /etc/hosts
