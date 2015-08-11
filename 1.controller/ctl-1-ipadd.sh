@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 source config.cfg
-echo "Welcome to setup OpenSatck - Part 1: Config IP for CONTROLLER. Script by Python Viet Nam"
+echo "Welcome to setup OpenSatck - Step 1: Config IP for CONTROLLER. Script by Python Viet Nam"
 sleep 8
 ifaces=/etc/network/interfaces
 test -f $ifaces.orig || cp $ifaces $ifaces.orig
