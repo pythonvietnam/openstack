@@ -2,7 +2,7 @@
 ### A. Mô hình cài đặt
 <b>1. Mô hình</b>
 
-![Alt text](http://i.imgur.com/5iSE5Zo.jpg)
+![Alt text](http://i.imgur.com/AlHlXvg.jpg)
 
 <b>2. Thông số các máy ảo trên Vmware</b>
 
