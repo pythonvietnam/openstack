@@ -2,7 +2,8 @@
 #
 
 source config.cfg
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
+sleep 5
 #
 iphost=/etc/hosts
 test -f $iphost.orig || cp $iphost $iphost.orig

@@ -1,7 +1,8 @@
 #!/bin/bash -ex
 
 source config.cfg
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
+sleep 5
 #Update for Ubuntu
 apt-get -y install ubuntu-cloud-keyring
 echo "deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main" \
