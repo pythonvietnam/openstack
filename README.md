@@ -42,8 +42,8 @@ Sau khi lấy về bạn sẽ thấy có 3 thư mục như sau:
 - Bạn chỉnh sửa file config.cfg như mẫu dưới đây
 
 ```sh
-## Assigning IP for CONTROLLER NODE: Địa chỉ này sẽ gắn cho máy chủ Controller, dải 192 dành cho việc ra ngoài mạng
-## Tương tự với các phần sau:
+## Assigning IP for CONTROLLER NODE: Địa chỉ này sẽ gắn cho máy chủ Controller
+## dải 192 dành cho việc ra ngoài mạng. Tương tự với các phần sau:
 CON_MGNT_IP=10.10.10.71
 CON_EXT_IP=192.168.0.10
 
@@ -67,6 +67,9 @@ GATEWAY_IP=192.168.0.2
 NETMASK_ADD=255.255.255.0
 
 ```
+- Chạy script đầu tiên, bash controller-1-ipadd.sh
+- Chạy tiếp controller-2-prepare.sh
+- 
 
 <b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
 
