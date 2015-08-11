@@ -1,9 +1,12 @@
 # Hướng dẫn cài đặt OpenStack KILO trên Ubuntu Server 14.04
 ### A. Mô hình cài đặt
-<b>Mô hình</b>
+<b>1. Mô hình</b>
 
-<b>Thông số máy ảo trên Vmware</b>
-1
+<b>2. Thông số các máy ảo trên Vmware</b>
+
+Máy chủ Controller
+
+![Alt text](http://i.imgur.com/NPEAnKr.jpg)
 ### B. Các bước cài đặt
 <b>Bước 1: Bạn thực hiện lấy toàn bộ script về máy chủ</b>
 
