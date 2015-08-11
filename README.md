@@ -1,4 +1,4 @@
-# Hướng dẫn cài đặt OpenStack KILO trên Ubuntu Server 14.04
+# Hướng dẫn cài đặt OpenStack KILO trên Ubuntu Server 14.04 (Mutil Node)
 ### A. Mô hình cài đặt
 <b>1. Mô hình</b>
 
@@ -71,9 +71,21 @@ Chạy script đầu tiên, bash controller-1-ipadd.sh
 
 ![Alt text](http://i.imgur.com/dJSFgRh.jpg)
 
-Chạy tiếp controller-2-prepare.sh
+Chạy tiếp bash controller-2-prepare.sh
 
 ![Alt text](http://i.imgur.com/5TDOmEk.jpg)
+
+kết quả thành công sẽ như sau:
+
+![Alt text]http://i.imgur.com/NT4wB0g.jpg)
+
+Chạy lệnh bash controller-3-create-db.sh
+
+![Alt text]http://i.imgur.com/4u1f19u.jpg)
+
+Chạy lệnh  bash controller-4.keystone.sh
+
+![Alt text]http://i.imgur.com/OhnBv5l.jpg)
 
 <b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
 
