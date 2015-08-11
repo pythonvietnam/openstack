@@ -14,6 +14,9 @@ apt-get install git -y
 git clone https://github.com/pythonvietnam/openstack.git
 
 ```
+Sau khi lấy về bạn sẽ thấy có 3 thư mục như sau:
+
+![Alt text](http://i.imgur.com/3SV240A.jpg)
 
 
 
