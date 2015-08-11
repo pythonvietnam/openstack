@@ -35,7 +35,14 @@ Sau khi lấy về bạn sẽ thấy có 3 thư mục như sau:
 
 ![Alt text](http://i.imgur.com/3SV240A.jpg)
 
+<b>Bước 2: Thực hiện chạy các script trên máy chủ Controller</b>
+
+- Danh sách các script như sau:
+![Alt text](http://i.imgur.com/ntoWF7S.jpg)
 
 
+<b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
+
+<b>Bước 2: Thực hiện chạy các script trên máy chủ Compute</b>
 
 Script install OpenStack KiLo custom by Python Viet Nam. 
