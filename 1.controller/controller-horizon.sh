@@ -3,6 +3,7 @@
 source config.cfg
 
 ###################
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
 echo "########## START INSTALLING OPS DASHBOARD ##########"
 ###################
 sleep 5

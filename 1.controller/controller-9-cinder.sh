@@ -1,6 +1,8 @@
 #!/bin/bash -ex
 source config.cfg
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
+echo "Install Cinder "
+sleep 5
 apt-get install lvm2 -y
 
 echo "########## Create Physical Volume and Volume Group (in sdb disk ) ##########"

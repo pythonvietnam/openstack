@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 #
 source config.cfg
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
 echo "########## Install NOVA in $CON_MGNT_IP ##########"
 sleep 5 
 apt-get -y install nova-api nova-cert nova-conductor nova-consoleauth nova-novncproxy nova-scheduler python-novaclient

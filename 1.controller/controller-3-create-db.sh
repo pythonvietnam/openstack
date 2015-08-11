@@ -2,7 +2,7 @@
 
 #Khai bao bien
 source config.cfg
- 
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
 echo "##### Install MYSQL #####"
 sleep 3
 

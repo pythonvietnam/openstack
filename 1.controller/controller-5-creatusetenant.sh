@@ -1,7 +1,8 @@
 #!/bin/bash -ex
 #
 source config.cfg
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
+sleep 5
 export OS_SERVICE_TOKEN="$TOKEN_PASS"
 export OS_SERVICE_ENDPOINT="http://$CON_MGNT_IP:35357/v2.0"
 export SERVICE_ENDPOINT="http://$CON_MGNT_IP:35357/v2.0"
@@ -34,8 +35,8 @@ DEMO_TENANT=$(get_id keystone tenant-create --name=$DEMO_TENANT_NAME)
 INVIS_TENANT=$(get_id keystone tenant-create --name=$INVIS_TENANT_NAME)
 
 # Users
-ADMIN_USER=$(get_id keystone user-create --name="$ADMIN_USER_NAME" --pass="$ADMIN_PASS" --email=congtt@pythonvietnam.com)
-DEMO_USER=$(get_id keystone user-create --name="$DEMO_USER_NAME" --pass="$ADMIN_PASS" --email=congtt@pythonvietnam.com)
+ADMIN_USER=$(get_id keystone user-create --name="$ADMIN_USER_NAME" --pass="$ADMIN_PASS" --email=khanhnn@pythonvietnam.com)
+DEMO_USER=$(get_id keystone user-create --name="$DEMO_USER_NAME" --pass="$ADMIN_PASS" --email=khanhnn@pythonvietnam.com)
 
 # Roles
 ADMIN_ROLE=$(get_id keystone role-create --name="$ADMIN_ROLE_NAME")

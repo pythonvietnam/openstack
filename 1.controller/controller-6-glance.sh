@@ -1,8 +1,9 @@
 #!/bin/bash -ex
 #
 source config.cfg
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
 echo "########## Install GLANCE ##########"
+sleep 5
 apt-get -y install glance python-glanceclient
 sleep 10
 echo "########## Configuring GLANCE API ##########"

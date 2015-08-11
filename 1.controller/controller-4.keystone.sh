@@ -5,8 +5,9 @@
 # MYSQL_PASS=a
 # ADMIN_PASS=a
 source config.cfg
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
 echo "##### Install keystone #####"
+sleep 5
 apt-get -y install keystone python-keystoneclient 
 
 #/* Back-up file nova.conf

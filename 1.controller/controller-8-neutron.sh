@@ -7,7 +7,7 @@ source config.cfg
 
 SERVICE_TENANT_ID=`keystone tenant-get service | awk '$2~/^id/{print $4}'`
 
-
+echo "Welcome to setup OpenSatck .Script by Python Viet Nam"
 echo "########## Install NEUTRON in $CON_MGNT_IP or NETWORK node ################"
 sleep 5
 apt-get -y install neutron-server neutron-plugin-ml2 python-neutronclient
