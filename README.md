@@ -77,15 +77,15 @@ Chạy tiếp bash controller-2-prepare.sh
 
 kết quả thành công sẽ như sau:
 
-![Alt text]http://i.imgur.com/NT4wB0g.jpg)
+![Alt text](http://i.imgur.com/NT4wB0g.jpg)
 
 Chạy lệnh bash controller-3-create-db.sh
 
-![Alt text]http://i.imgur.com/4u1f19u.jpg)
+![Alt text](http://i.imgur.com/4u1f19u.jpg)
 
 Chạy lệnh  bash controller-4.keystone.sh
 
-![Alt text]http://i.imgur.com/OhnBv5l.jpg)
+![Alt text](http://i.imgur.com/OhnBv5l.jpg)
 
 <b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
 
