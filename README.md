@@ -7,6 +7,16 @@
 Máy chủ Controller
 
 ![Alt text](http://i.imgur.com/NPEAnKr.jpg)
+
+Máy chủ Network
+
+![Alt text](http://i.imgur.com/wfk5VNJ.jpg)
+
+Máy chủ Compute
+
+![Alt text](http://i.imgur.com/qQzMHDB.jpg)
+
+
 ### B. Các bước cài đặt
 <b>Bước 1: Bạn thực hiện lấy toàn bộ script về máy chủ</b>
 
