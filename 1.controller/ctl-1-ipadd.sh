@@ -1,6 +1,7 @@
 #!/bin/bash -ex
 source config.cfg
-
+echo "Welcome to setup OpenSatck - Part 1: Config IP for CONTROLLER. Script by Python Viet Nam"
+sleep 8
 ifaces=/etc/network/interfaces
 test -f $ifaces.orig || cp $ifaces $ifaces.orig
 rm $ifaces
@@ -33,7 +34,8 @@ echo "Configuring hostname in CONTROLLER node"
 sleep 3
 echo "controller" > /etc/hostname
 hostname -F /etc/hostname
-
+echo "Config IP complete. Now the machine will be reboot"
+sleep 5
 #Khoi dong lai cac card mang vua dat
 # service networking restart
 

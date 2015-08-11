@@ -1,7 +1,8 @@
 #!/bin/bash -ex
 #
 source config.cfg
-
+echo "Welcome to setup OpenSatck - Step 2: Prepare for CONTROLLER. Script by Python Viet Nam"
+sleep 8
 echo "Configuring for file /etc/hosts"
 sleep 3
 iphost=/etc/hosts
