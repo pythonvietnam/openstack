@@ -39,7 +39,34 @@ Sau khi lấy về bạn sẽ thấy có 3 thư mục như sau:
 
 - Danh sách các script như sau:
 ![Alt text](http://i.imgur.com/ntoWF7S.jpg)
+- Bạn chỉnh sửa file config.cfg như mẫu dưới đây
 
+```sh
+## Assigning IP for CONTROLLER NODE: Địa chỉ này sẽ gắn cho máy chủ Controller, dải 192 dành cho việc ra ngoài mạng
+## Tương tự với các phần sau:
+CON_MGNT_IP=10.10.10.71
+CON_EXT_IP=192.168.0.10
+
+# Assigning IP for NETWORK NODE
+NET_MGNT_IP=10.10.10.72
+NET_EXT_IP=192.168.0.11
+NET_DATA_VM_IP=10.10.20.72
+
+# Assigning IP for COMPUTE1 NODE
+COM1_MGNT_IP=10.10.10.73
+COM1_EXT_IP=192.168.0.12
+COM1_DATA_VM_IP=10.10.20.73
+
+# Assigning IP for COMPUTE2 NODE
+COM2_MGNT_IP=10.10.10.74
+COM2_EXT_IP=192.168.0.13
+COM2_DATA_VM_IP=10.10.20.74
+
+#Gateway for EXT network
+GATEWAY_IP=192.168.0.2
+NETMASK_ADD=255.255.255.0
+
+```
 
 <b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
 
