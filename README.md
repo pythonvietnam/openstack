@@ -145,4 +145,6 @@ Chạy lệnh: bash compute1-2-prepare
 ![Alt text](http://i.imgur.com/dx9NdX6.jpg)
 
 Chúc mừng bạn đã cài đặt thành công!
+
+
 Script install OpenStack KiLo custom by Python Viet Nam. 
