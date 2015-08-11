@@ -2,6 +2,8 @@
 ### A. Mô hình cài đặt
 <b>1. Mô hình</b>
 
+![Alt text](http://i.imgur.com/ijxo8Kg.jpg)
+
 <b>2. Thông số các máy ảo trên Vmware</b>
 
 Máy chủ Controller
