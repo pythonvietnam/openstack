@@ -67,9 +67,13 @@ GATEWAY_IP=192.168.0.2
 NETMASK_ADD=255.255.255.0
 
 ```
-- Chạy script đầu tiên, bash controller-1-ipadd.sh
-- Chạy tiếp controller-2-prepare.sh
-- 
+Chạy script đầu tiên, bash controller-1-ipadd.sh
+
+![Alt text](http://i.imgur.com/dJSFgRh.jpg)
+
+Chạy tiếp controller-2-prepare.sh
+
+![Alt text](http://i.imgur.com/5TDOmEk.jpg)
 
 <b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b>
 
