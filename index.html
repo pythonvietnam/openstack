@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Openstack by pythonvietnam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Openstack</h1>
+      <h2 class="project-tagline">Script install OpenStack KiLo custom by Python Viet Nam. </h2>
+      <a href="https://github.com/pythonvietnam/openstack" class="btn">View on GitHub</a>
+      <a href="https://github.com/pythonvietnam/openstack/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/pythonvietnam/openstack/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="hướng-dẫn-cài-đặt-openstack-kilo-trên-ubuntu-server-1404-mutil-node" class="anchor" href="#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t-openstack-kilo-tr%C3%AAn-ubuntu-server-1404-mutil-node" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hướng dẫn cài đặt OpenStack KILO trên Ubuntu Server 14.04 (Mutil Node)</h1>
+
+<h3>
+<a id="a-mô-hình-cài-đặt" class="anchor" href="#a-m%C3%B4-h%C3%ACnh-c%C3%A0i-%C4%91%E1%BA%B7t" aria-hidden="true"><span class="octicon octicon-link"></span></a>A. Mô hình cài đặt</h3>
+
+<p><b>1. Mô hình</b></p>
+
+<p><img src="http://i.imgur.com/AlHlXvg.jpg" alt="Alt text"></p>
+
+<p><b>2. Thông số các máy ảo trên Vmware</b></p>
+
+<p>Máy chủ Controller</p>
+
+<p><img src="http://i.imgur.com/NPEAnKr.jpg" alt="Alt text"></p>
+
+<p>Máy chủ Network</p>
+
+<p><img src="http://i.imgur.com/wfk5VNJ.jpg" alt="Alt text"></p>
+
+<p>Máy chủ Compute</p>
+
+<p><img src="http://i.imgur.com/qQzMHDB.jpg" alt="Alt text"></p>
+
+<h3>
+<a id="b-các-bước-cài-đặt" class="anchor" href="#b-c%C3%A1c-b%C6%B0%E1%BB%9Bc-c%C3%A0i-%C4%91%E1%BA%B7t" aria-hidden="true"><span class="octicon octicon-link"></span></a>B. Các bước cài đặt</h3>
+
+<p><b>Bước 1: Bạn thực hiện lấy toàn bộ script về máy chủ</b></p>
+
+<p>Chú ý: Thao tác này bạn có thể làm trên tất cả các máy hoặc có thể làm trên một máy rồi copy sang các máy chủ khác.</p>
+
+<div class="highlight highlight-sh"><pre><span class="pl-c"># cập nhật các gói</span>
+apt-get update
+<span class="pl-c"># Thực hiện cài đặt Git</span>
+apt-get install git -y
+<span class="pl-c">#Lấy toàn bộ script về máy chủ    </span>
+git clone https://github.com/pythonvietnam/openstack.git
+</pre></div>
+
+<p>Sau khi lấy về bạn sẽ thấy có 3 thư mục như sau:</p>
+
+<p><img src="http://i.imgur.com/3SV240A.jpg" alt="Alt text"></p>
+
+<p><b>Bước 2: Thực hiện chạy các script trên máy chủ Controller</b></p>
+
+<ul>
+<li>Danh sách các script như sau:
+<img src="http://i.imgur.com/ntoWF7S.jpg" alt="Alt text">
+</li>
+<li>Bạn chỉnh sửa file config.cfg như mẫu dưới đây</li>
+</ul>
+
+<div class="highlight highlight-sh"><pre><span class="pl-c">## Assigning IP for CONTROLLER NODE: Địa chỉ này sẽ gắn cho máy chủ Controller</span>
+<span class="pl-c">## dải 192 dành cho việc ra ngoài mạng. Tương tự với các phần sau:</span>
+CON_MGNT_IP=10.10.10.71
+CON_EXT_IP=192.168.0.10
+
+<span class="pl-c"># Assigning IP for NETWORK NODE</span>
+NET_MGNT_IP=10.10.10.72
+NET_EXT_IP=192.168.0.11
+NET_DATA_VM_IP=10.10.20.72
+
+<span class="pl-c"># Assigning IP for COMPUTE1 NODE</span>
+COM1_MGNT_IP=10.10.10.73
+COM1_EXT_IP=192.168.0.12
+COM1_DATA_VM_IP=10.10.20.73
+
+<span class="pl-c"># Assigning IP for COMPUTE2 NODE</span>
+COM2_MGNT_IP=10.10.10.74
+COM2_EXT_IP=192.168.0.13
+COM2_DATA_VM_IP=10.10.20.74
+
+<span class="pl-c">#Gateway for EXT network</span>
+GATEWAY_IP=192.168.0.2
+NETMASK_ADD=255.255.255.0
+</pre></div>
+
+<p>Chạy script đầu tiên, bash controller-1-ipadd.sh</p>
+
+<p><img src="http://i.imgur.com/dJSFgRh.jpg" alt="Alt text"></p>
+
+<p>Chạy tiếp bash controller-2-prepare.sh</p>
+
+<p><img src="http://i.imgur.com/5TDOmEk.jpg" alt="Alt text"></p>
+
+<p>kết quả thành công sẽ như sau:</p>
+
+<p><img src="http://i.imgur.com/NT4wB0g.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh bash controller-3-create-db.sh</p>
+
+<p><img src="http://i.imgur.com/4u1f19u.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh:  bash controller-4.keystone.sh</p>
+
+<p><img src="http://i.imgur.com/fCOzw2r.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh: bash controller-5-creatusetenant.sh</p>
+
+<p><img src="http://i.imgur.com/OhnBv5l.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh: bash controller-6-glance.sh</p>
+
+<p><img src="http://i.imgur.com/HKc5iHv.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh: bash controller-7-nova.sh</p>
+
+<p><img src="http://i.imgur.com/sWKVdnd.jpg" alt="Alt text"></p>
+
+<p>Thực hiện confirm</p>
+
+<p><img src="http://i.imgur.com/YxgDKAK.jpg" alt="Alt text"></p>
+
+<p>Chạy lênh: bash controller-8-neutron.sh</p>
+
+<p><img src="http://i.imgur.com/xPemi6T.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh: bash controller-9-cinder.sh</p>
+
+<p><img src="http://i.imgur.com/sJZyDXw.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh: bash controller-horizon.sh</p>
+
+<p><img src="http://i.imgur.com/75sWDsN.jpg" alt="Alt text"></p>
+
+<p>Thông tin login như sau:</p>
+
+<p><img src="http://i.imgur.com/dF7FJgc.jpg" alt="Alt text"></p>
+
+<p><b>Bước 3: Thực hiện chạy các script trên máy chủ Network</b></p>
+
+<p>Chú ý: Bạn copy file config.cfg sang máy chủ Network và chuyển đến thư mục network trong scrit cài đặt</p>
+
+<p>Chạy lệnh: bash network-1-ipadd.sh</p>
+
+<p><img src="http://i.imgur.com/mBEdiGh.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh: bash network-2-prepare.sh</p>
+
+<p><img src="http://i.imgur.com/OQEIJwy.jpg" alt="Alt text"></p>
+
+<p><b>Bước 2: Thực hiện chạy các script trên máy chủ Compute</b></p>
+
+<p>Chú ý: Bạn cần copy file config.cfg sang máy chủ này.</p>
+
+<p>Chạy lênh: bash compute1-1-ipdd.sh</p>
+
+<p><img src="http://i.imgur.com/6j5hqIb.jpg" alt="Alt text"></p>
+
+<p>Chạy lệnh: bash compute1-2-prepare</p>
+
+<p><img src="http://i.imgur.com/dx9NdX6.jpg" alt="Alt text"></p>
+
+<p>Chúc mừng bạn đã cài đặt thành công!</p>
+
+<p>Script install OpenStack KiLo custom by Python Viet Nam. </p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/pythonvietnam/openstack">Openstack</a> is maintained by <a href="https://github.com/pythonvietnam">pythonvietnam</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
